@@ -4,44 +4,36 @@ public class Person {
     private String lastName;
     private int age;
     private String address;
-    public Person(String firstName, String lastName, int age, String address) {
-        this.firstName=firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.address = address;
+    public Person(Builder builder) {
+        this.firstName=builder.firstName;
+        this.lastName=builder.lastName;
+        this.age=builder.age;
+        this.address= builder.address;
     }
 
     public String getfirstName() {
         return firstName;
     }
 
-    public void setfirstName(String firstName) {
-        this.firstName = firstName;
-    }
+
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+
 
     public int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+
 
     public String getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
+
 
 
 
